@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./devchallenges.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout Page</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title-main">Checkout</h1>
+    </div>
+    <div class="main-split">
+      <div class="cart">
+        <div class="item">
+          <div class="image">
+            <img src="./photo1.png" class="img-fluid" alt="backpack">
+          </div>
+          <div class="body">
+            <div class="info">
+              <h4 class="name">Backpack</h4>
+              <h3 class="price">$85.54</h5>
+                <h5 class="old-price"><del>$94.99</del></h5>
+            </div>
+            <div class="quantity">
+              <div class="box">
+                <span class="material-icons-outlined">
+                  remove
+                </span>
+              </div>
+              <h3>3</h3>
+              <div class="box">
+                <span class="material-icons-outlined">
+                  add
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="./photo2.png" class="img-fluid" alt="shoes">
+          </div>
+          <div class="body">
+            <div class="info">
+              <h4 class="name">Shoes</h4>
+              <h3 class="price">$72.25</h5>
+                <h5 class="old-price"><del>$124.99</del></h5>
+            </div>
+            <div class="quantity">
+              <div class="box">
+                <span class="material-icons-outlined">
+                  remove
+                </span>
+              </div>
+              <h3>1</h3>
+              <div class="box">
+                <span class="material-icons-outlined">
+                  add
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="shipping">
+            <h4>Shipping</h4>
+            <h4>$20</h4>
+          </div>
+          <div class="total">
+            <h4>Total</h4>
+            <h4>$290</h4>
+          </div>
+        </div>
+      </div>
+      <div class="checkout">
+        <form>
+          <section class="contact">
+            <h4>Contact Information</h4>
+            <div class="input-field">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Enter your email..." required>
+              <span class="material-icons">email</span>
+            </div>
+            <div class="input-field">
+              <label for="phone">Phone</label>
+              <input type="text" name="phone" placeholder="Enter your phone..." required>
+              <span class="material-icons">phone</span>
+            </div>
+          </section>
+          <section class="shipping">
+            <h4>Shipping Address</h4>
+            <div class="input-field">
+              <label for="fullname">Full Name</label>
+              <input type="text" name="fullname" placeholder="Rodney Cotton" required>
+              <span class="material-icons">account_circle</span>
+            </div>
+            <div class="input-field">
+              <label for="address">Address</label>
+              <input type="text" name="address" placeholder="Your Address..." required>
+              <span class="material-icons">home</span>
+            </div>
+            <div class="input-field">
+              <label for="city">City</label>
+              <input type="text" name="city" placeholder="Your City..." required>
+              <span class="material-icons">location_city</span>
+            </div>
+            <div class="split">
+              <div class="input-field">
+                <label for="country">Country</label>
+                <!-- <input type="text" name="country" placeholder="Your country" required> -->
+
+                <select name="" id="">
+                  <option value="Country" disabled selected>Coutry</option>
+                  <option >Japão</option>
+                  <option >França</option>
+                  <option >Brasil</option>
+                  <option >EUA</option>
+                </select>
+
+                <span class="material-icons">location_city</span>
+              </div>
+              <div class="input-field">
+                <label for="postalcode">Postal Code</label>
+                <input type="text" name="postalcode" placeholder="Postal code" required>
+                <span class="material-icons">markunread_mailbox</span>
+              </div>
+            </div>
+          </section>
+          <div class="save">
+            <input type="checkbox" name="saveinfo">
+            <label for="saveinfo" id="saveinfo">Save this information for next time</label>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Continue" id="submit-btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<footer>created by Yuri Fernandes - devChallenges.io</footer>
+
+<script>
+  const btn = document.getElementById('submit-btn')
+  btn.addEventListener('click', myFunction)
+  function myFunction() {
+    alert("Order placed!");
+  }
+  </script>
+</html>
